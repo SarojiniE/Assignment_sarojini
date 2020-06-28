@@ -36,6 +36,7 @@ public class Example1 {
 		WebElement logout_lnk = driver.findElement(By.linkText("Log out"));
 		logout_lnk.click();
 		System.out.println("Register successful");
+		driver.close();
 
 	}
 

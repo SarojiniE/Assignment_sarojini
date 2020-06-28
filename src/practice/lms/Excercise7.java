@@ -5,21 +5,18 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 
-public class Exercise2 {
+public class Excercise7 {
 
 	public static void main(String[] args) {
-		//Program for mouse movements using webdriver
+		//To understand web table
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("http://demowebshop.tricentis.com/");	
-		Actions act = new Actions(driver);
-		act.moveToElement(driver.findElement(By.linkText("COMPUTERS"))).perform();
-		driver.findElement(By.linkText("Accessories")).click();
-		driver.close();
-
+		driver.get("https://html.com/tables/#table_code_sample_simple_table");
+		String innerText = driver.findElement(By.xpath("//table/tbody/tr[2]/td[2]")).getText();
+		System.out.println(innerText);
+		driver.quit();
 	}
 
 }
