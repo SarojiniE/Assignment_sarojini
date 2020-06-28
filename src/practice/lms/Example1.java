@@ -22,11 +22,11 @@ public class Example1 {
 		WebElement radio1 = driver.findElement(By.id("gender-male"));
 		radio1.click();
 		WebElement email = driver.findElement(By.id("Email"));
-		email.sendKeys("sarojini@gmail.com");
+		email.sendKeys("sarojini11@gmail.com");
 		WebElement firstname = driver.findElement(By.id("FirstName"));
-		firstname.sendKeys("Sarojini");
+		firstname.sendKeys("Sarojini11");
 		WebElement lastname = driver.findElement(By.id("LastName"));
-		lastname.sendKeys("Emekar");
+		lastname.sendKeys("Emekar11");
 		WebElement pwd = driver.findElement(By.id("Password"));
 		pwd.sendKeys("Password@123");
 		WebElement confirm_pwd = driver.findElement(By.id("ConfirmPassword"));
