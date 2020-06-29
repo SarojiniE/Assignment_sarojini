@@ -26,7 +26,7 @@ public class TestNGBasicProgram {
 		driver.get("http://magento.com");
 		String actualTitle = driver.getTitle();
 		String expectedTitle = "eCommerce Platforms | Best eCommerce Software for Selling Online | Magento";
-		Assert.assertEquals("Condition true", actualTitle, expectedTitle);
+		Assert.assertEquals(actualTitle, expectedTitle);
 		driver.close();		
 	}
 	
